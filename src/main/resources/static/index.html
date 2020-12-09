@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<form method="post" object="my_message" action="/add">
+    <input type="text" name="id">
+    <input type="text" name="message">
+    <button type="submit">Add Message</button>
+</form>
+<a href="http://192.168.0.105:9071/one">all</a>
+</body>
+<script>
+    console.log("hello kotlin");
+
+    // const requestOptions = {
+    //     method: 'GET',
+    //     headers: {
+    //         'Accept': 'application/json',
+    //         'Content-Type': 'application/json',
+    //         'Access-Control-Allow-Origin': '*' }}
+
+  fetch('http://localhost:9071/one')
+    .then(res=> console.log(res))
+      // .then((resJson) => {console.log(resJson)})
+    .catch((e)=>console.log(e))
+</script>
+</html>
